@@ -1,3 +1,4 @@
+import './style.css';
 import confetti from 'canvas-confetti';
 import { projectsData } from './data/projects.js';
 import { skillsData } from './data/skills.js';

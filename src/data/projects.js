@@ -8,7 +8,7 @@ export const projectsData = [
     badge: 'Live Production Platform',
     shortDescription: 'Cutting-edge Bangladesh fashion e-commerce storefront featuring interactive virtual clothing try-on, body dimension scanning, and seamless checkout.',
     fullDescription: 'Softyx Clothing is a flagship production e-commerce application designed to revolutionize online apparel shopping. Built with TypeScript and high-performance frontend architecture, it integrates interactive virtual try-on tech, 3D clothing previewing, custom size recommendation algorithms, and a sleek modern shopping cart.',
-    image: '/assets/projects/softyx_ui.jpg',
+    image: './assets/projects/softyx_ui.jpg',
     tags: ['TypeScript', 'E-Commerce', 'Virtual Try-On', 'Body Scanner', 'Next.js / React', 'Tailored UI'],
     stats: {
       status: 'Live on softyx.shop',
@@ -34,7 +34,7 @@ export const projectsData = [
     badge: 'UK Live Enterprise Web',
     shortDescription: 'Modern, high-converting digital web platform for a UK-based professional cleaning enterprise with automated quotation, booking, and customer scheduling.',
     fullDescription: 'Profix & Shine UK delivers an end-to-end commercial web solution for professional cleaning services operating across the United Kingdom. Engineered with TypeScript, responsive glassmorphism UI, and optimized SEO architecture, the platform enables clients to request instant service quotes, book maintenance slots, and review certified safety compliance standards.',
-    image: '/assets/projects/profix_ui.jpg',
+    image: './assets/projects/profix_ui.jpg',
     tags: ['TypeScript', 'Commercial Web', 'Booking Engine', 'SEO Architecture', 'Responsive UI'],
     stats: {
       status: 'Live on profixandshine.co.uk',
@@ -60,7 +60,7 @@ export const projectsData = [
     badge: 'Flagship GitHub Project',
     shortDescription: 'Intuitive full-stack platform revolutionizing the way books, study materials, and educational literature are shared, tracked, and exchanged across communities.',
     fullDescription: 'BiblioDrop is an end-to-end full-stack web ecosystem built for book lovers, university students, and local reading communities. It enables seamless peer-to-peer book lending, digital reservations, interactive catalog indexing, and real-time inventory tracking with a focus on speed and delightful user experience.',
-    image: '/assets/projects/bibliodrop_ui.jpg',
+    image: './assets/projects/bibliodrop_ui.jpg',
     tags: ['JavaScript', 'Vite', 'Node.js', 'Express', 'Interactive Catalog', 'REST API'],
     stats: {
       architecture: 'Single Page App',
@@ -86,7 +86,7 @@ export const projectsData = [
     badge: 'Security & Analytics',
     shortDescription: 'Risk assessment algorithm engine engineered for e-commerce platforms to detect suspicious orders, flag disposable emails, and prevent checkout fraud.',
     fullDescription: 'Softyx Fraud Checker protects online stores from chargebacks, fraudulent transactions, and bogus orders. By analyzing transaction metadata, IP consistency, shipping vs billing discrepancies, and phone validation flags, it gives merchants immediate risk scoring to approve or hold orders.',
-    image: '/assets/projects/fraud_ui.jpg',
+    image: './assets/projects/fraud_ui.jpg',
     tags: ['TypeScript', 'Fraud Detection', 'Security Rules', 'API Integration', 'Risk Scoring'],
     stats: {
       detection: 'Real-time Risk Scoring',
@@ -112,7 +112,7 @@ export const projectsData = [
     badge: 'Academic Innovation',
     shortDescription: 'Clean, distraction-free study portal designed for students to organize academic tasks, track study sprints, and synchronize notes collaboratively.',
     fullDescription: 'StudySync streamlines study sessions by uniting task planning, focus timers, and group study tracking in a single modern web interface. Built with lightweight web standards for lightning-fast loads on any device.',
-    image: '/assets/projects/studysync_ui.jpg',
+    image: './assets/projects/studysync_ui.jpg',
     tags: ['HTML5', 'Modern CSS3', 'JavaScript', 'Productivity', 'Study Hub'],
     stats: {
       loadTime: '< 0.3s',
@@ -138,7 +138,7 @@ export const projectsData = [
     badge: 'AI & Data Science',
     shortDescription: 'Predictive agricultural intelligence application utilizing Python data models to forecast crop health, weather anomalies, and soil conditions.',
     fullDescription: 'FieldForesight bridges data science with agricultural management. By synthesizing environmental sensor feeds and historical climate datasets, it assists farmers and researchers in anticipating field conditions and optimizing harvest yields.',
-    image: '/assets/projects/portfolio_ui.jpg',
+    image: './assets/projects/portfolio_ui.jpg',
     tags: ['Python', 'Data Modeling', 'Predictive AI', 'Agricultural Tech', 'Analytics'],
     stats: {
       stack: 'Python Data Models',

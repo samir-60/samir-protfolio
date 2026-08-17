@@ -26,17 +26,17 @@ const LANGUAGE_COLORS = {
  */
 function getRepoCoverImage(repoName, language) {
   const clean = (repoName || '').toLowerCase().replace(/[^a-z0-9]/g, '');
-  if (clean.includes('softyx') && clean.includes('fraud')) return '/assets/projects/fraud_ui.jpg';
-  if (clean.includes('softyx')) return '/assets/projects/softyx_ui.jpg';
-  if (clean.includes('profix') || clean.includes('shine')) return '/assets/projects/profix_ui.jpg';
-  if (clean.includes('biblio') || clean.includes('book')) return '/assets/projects/bibliodrop_ui.jpg';
-  if (clean.includes('study') || clean.includes('sync')) return '/assets/projects/studysync_ui.jpg';
-  if (clean.includes('fraud') || clean.includes('cyber') || clean.includes('security')) return '/assets/projects/fraud_ui.jpg';
-  if (clean.includes('protfolio') || clean.includes('portfolio') || clean.includes('samir')) return '/assets/projects/portfolio_ui.jpg';
+  if (clean.includes('softyx') && clean.includes('fraud')) return './assets/projects/fraud_ui.jpg';
+  if (clean.includes('softyx')) return './assets/projects/softyx_ui.jpg';
+  if (clean.includes('profix') || clean.includes('shine')) return './assets/projects/profix_ui.jpg';
+  if (clean.includes('biblio') || clean.includes('book')) return './assets/projects/bibliodrop_ui.jpg';
+  if (clean.includes('study') || clean.includes('sync')) return './assets/projects/studysync_ui.jpg';
+  if (clean.includes('fraud') || clean.includes('cyber') || clean.includes('security')) return './assets/projects/fraud_ui.jpg';
+  if (clean.includes('protfolio') || clean.includes('portfolio') || clean.includes('samir')) return './assets/projects/portfolio_ui.jpg';
   
-  if (language === 'Python') return '/assets/projects/fraud_ui.jpg';
-  if (language === 'JavaScript' || language === 'HTML') return '/assets/projects/studysync_ui.jpg';
-  return '/assets/projects/portfolio_ui.jpg';
+  if (language === 'Python') return './assets/projects/fraud_ui.jpg';
+  if (language === 'JavaScript' || language === 'HTML') return './assets/projects/studysync_ui.jpg';
+  return './assets/projects/portfolio_ui.jpg';
 }
 
 /**

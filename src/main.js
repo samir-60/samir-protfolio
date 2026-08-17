@@ -34,7 +34,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // 3. Initialize Modals
   const projectModal = new ProjectModal('projectModal', 'projectModalBackdrop', 'projectModalContent');
-  new ResumeModal('resumeModal', 'resumeModalBackdrop', 'openResumeBtn');
+  const resumeModal = new ResumeModal('resumeModal', 'resumeModalBackdrop', 'openResumeBtn');
 
   // 4. Initialize CLI Terminal
   new Terminal('terminalBody', 'terminalInput');
@@ -72,7 +72,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initContactInteractions();
 
   // 11. Navigation & Scroll Spy
-  initNavigation();
+  initNavigation(resumeModal);
 
   // 12. Footer Live Clock
   initLiveClock();
@@ -551,29 +551,119 @@ function initContactInteractions() {
 /* ==========================================================================
    NAVIGATION & LIVE CLOCK
    ========================================================================== */
-function initNavigation() {
+function initNavigation(resumeModalInstance) {
   const navLinks = document.querySelectorAll('.nav-link');
+  const mobileLinks = document.querySelectorAll('.mobile-drawer-link');
   const sections = document.querySelectorAll('section[id]');
   const backToTop = document.getElementById('backToTopBtn');
 
+  // Mobile Drawer Elements
+  const mobileToggle = document.getElementById('mobileNavToggle');
+  const mobileDrawer = document.getElementById('mobileNavDrawer');
+  const mobileBackdrop = document.getElementById('mobileNavBackdrop');
+  const mobileClose = document.getElementById('mobileDrawerClose');
+  const mobileResumeBtn = document.getElementById('mobileResumeBtn');
+
+  function openMobileDrawer() {
+    if (!mobileDrawer) return;
+    mobileDrawer.classList.add('open');
+    mobileDrawer.setAttribute('aria-hidden', 'false');
+    if (mobileToggle) {
+      mobileToggle.classList.add('active');
+      mobileToggle.setAttribute('aria-expanded', 'true');
+    }
+    if (mobileBackdrop) {
+      mobileBackdrop.classList.add('open');
+    }
+    document.body.classList.add('modal-locked');
+    soundEngine.playModalOpen();
+  }
+
+  function closeMobileDrawer() {
+    if (!mobileDrawer) return;
+    mobileDrawer.classList.remove('open');
+    mobileDrawer.setAttribute('aria-hidden', 'true');
+    if (mobileToggle) {
+      mobileToggle.classList.remove('active');
+      mobileToggle.setAttribute('aria-expanded', 'false');
+    }
+    if (mobileBackdrop) {
+      mobileBackdrop.classList.remove('open');
+    }
+    document.body.classList.remove('modal-locked');
+  }
+
+  if (mobileToggle) {
+    mobileToggle.addEventListener('click', (e) => {
+      e.stopPropagation();
+      if (mobileDrawer?.classList.contains('open')) {
+        closeMobileDrawer();
+        soundEngine.playClick();
+      } else {
+        openMobileDrawer();
+      }
+    });
+  }
+
+  if (mobileClose) {
+    mobileClose.addEventListener('click', () => {
+      closeMobileDrawer();
+      soundEngine.playClick();
+    });
+  }
+
+  if (mobileBackdrop) {
+    mobileBackdrop.addEventListener('click', () => {
+      closeMobileDrawer();
+      soundEngine.playClick();
+    });
+  }
+
+  // Auto close mobile drawer when any link is clicked
+  mobileLinks.forEach(link => {
+    link.addEventListener('click', () => {
+      closeMobileDrawer();
+      soundEngine.playClick();
+    });
+  });
+
+  if (mobileResumeBtn) {
+    mobileResumeBtn.addEventListener('click', () => {
+      closeMobileDrawer();
+      if (resumeModalInstance) {
+        resumeModalInstance.open();
+      } else {
+        const resumeModal = document.getElementById('resumeModal');
+        const resumeBackdrop = document.getElementById('resumeModalBackdrop');
+        if (resumeModal && resumeBackdrop) {
+          soundEngine.playModalOpen();
+          document.body.classList.add('modal-locked');
+          resumeModal.classList.add('active');
+          resumeBackdrop.classList.add('active');
+        }
+      }
+    });
+  }
+
+  // ScrollSpy
   window.addEventListener('scroll', () => {
     const scrollY = window.pageYOffset;
 
     sections.forEach(sec => {
       const secHeight = sec.offsetHeight;
-      const secTop = sec.offsetTop - 120;
+      const secTop = sec.offsetTop - 140;
       const secId = sec.getAttribute('id');
 
       if (scrollY > secTop && scrollY <= secTop + secHeight) {
         navLinks.forEach(link => {
-          link.classList.remove('active');
-          if (link.getAttribute('href') === `#${secId}`) {
-            link.classList.add('active');
-          }
+          link.classList.toggle('active', link.getAttribute('href') === `#${secId}`);
+        });
+        mobileLinks.forEach(link => {
+          link.classList.toggle('active', link.getAttribute('href') === `#${secId}`);
         });
       }
     });
-  });
+  }, { passive: true });
 
   if (backToTop) {
     backToTop.addEventListener('click', () => {

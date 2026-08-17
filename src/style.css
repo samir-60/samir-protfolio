@@ -2494,19 +2494,22 @@ a {
 
 .hud-slide-track {
   display: flex;
-  width: 400%;
+  width: 100%;
   height: 100%;
   transition: transform 0.55s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 .hud-telemetry-slide {
-  width: 25%;
+  min-width: 100%;
+  width: 100%;
+  flex: 0 0 100%;
   height: 100%;
   display: flex;
   align-items: center;
   opacity: 0.3;
   transition: opacity 0.4s ease;
   overflow: hidden;
+  box-sizing: border-box;
 }
 
 .hud-telemetry-slide.active {

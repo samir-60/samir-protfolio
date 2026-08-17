@@ -1,0 +1,625 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="obsidian">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#0b0f17" />
+  <title>Samir Qureshi — Full-Stack Engineer, Web Developer & Business Strategist</title>
+  <meta name="description" content="Official Portfolio of Samir Qureshi. Full-Stack Engineer and Business Technologist crafting high-performance web platforms, e-commerce engines, and fluid 3D interactive experiences." />
+  <meta name="keywords" content="Samir Qureshi, Portfolio, Full-Stack Developer, TypeScript, JavaScript, Softyx Clothing, Profix & Shine UK, BiblioDrop, Three.js, React, Node.js" />
+  <meta name="author" content="Samir Qureshi" />
+
+  <!-- OpenGraph Metadata -->
+  <meta property="og:title" content="Samir Qureshi — Full-Stack Engineer & Builder" />
+  <meta property="og:description" content="Where Business Strategy meets High-Performance Engineering & Human-Centered Design." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://github.com/samir-60" />
+  <meta property="og:image" content="./samir-qureshi.jpg" />
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
+
+  <!-- Google Fonts: Outfit, Inter & JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&family=Outfit:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+
+  <!-- Stylesheet -->
+  <script type="module" crossorigin src="./assets/index-DGeCqmWU.js"></script>
+  <link rel="stylesheet" crossorigin href="./assets/index-6-KPInXs.css">
+</head>
+<body>
+
+  <!-- Floating Navigation Bar -->
+  <div class="navbar-wrapper">
+    <nav class="navbar" id="mainNavbar">
+      <a href="#hero" class="nav-brand" id="navBrand">
+        <div class="nav-logo-icon">S</div>
+        <span>Samir Qureshi</span>
+      </a>
+
+      <ul class="nav-links">
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#experience" class="nav-link">Experience</a></li>
+        <li><a href="#terminal" class="nav-link">CLI Shell</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <!-- Sound Toggle -->
+        <button class="control-btn" id="soundToggleBtn" title="Toggle UI Sound Effects" aria-label="Toggle sound">
+          <svg id="soundIconOn" xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon><path d="M15.54 8.46a5 5 0 0 1 0 7.07"></path><path d="M19.07 4.93a10 10 0 0 1 0 14.14"></path></svg>
+          <svg id="soundIconOff" style="display:none;" xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon><line x1="23" y1="9" x2="17" y2="15"></line><line x1="17" y1="9" x2="23" y2="15"></line></svg>
+        </button>
+
+        <!-- Theme Switcher -->
+        <div class="theme-dropdown" id="themeDropdown">
+          <button class="control-btn" id="themeBtn" title="Change Theme Palette" aria-label="Change theme">
+            <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"></circle><path d="M12 2v2"></path><path d="M12 20v2"></path><path d="m4.93 4.93 1.41 1.41"></path><path d="m17.66 17.66 1.41 1.41"></path><path d="M2 12h2"></path><path d="M20 12h2"></path><path d="m6.34 17.66-1.41 1.41"></path><path d="m19.07 4.93-1.41 1.41"></path></svg>
+          </button>
+          <div class="theme-menu">
+            <button class="theme-item active" data-set-theme="obsidian">
+              <span class="theme-dot obsidian"></span> Executive Dark
+            </button>
+            <button class="theme-item" data-set-theme="emerald">
+              <span class="theme-dot emerald"></span> Studio Emerald
+            </button>
+            <button class="theme-item" data-set-theme="solar">
+              <span class="theme-dot solar"></span> Warm Sunset
+            </button>
+          </div>
+        </div>
+
+        <!-- Resume Modal Trigger -->
+        <button class="btn btn-primary" id="openResumeBtn" style="padding: 0.45rem 1.1rem; font-size: 0.85rem;">
+          <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z"></path><polyline points="14 2 14 8 20 8"></polyline></svg>
+          Resume
+        </button>
+      </div>
+    </nav>
+  </div>
+
+  <!-- Hero Section -->
+  <section class="hero-section" id="hero">
+    <div id="three-hero-canvas"></div>
+    <div class="hero-overlay-glow"></div>
+
+    <div class="container">
+      <div class="hero-content">
+        <!-- Live Geo-Telemetry Sliding HUD Capsule (IP & Country Wise Live Time/Date) -->
+        <div id="geoTelemetryMount" style="margin-bottom: 1.2rem; display: flex; justify-content: center;"></div>
+
+        <div class="hero-tag-wrap">
+          <div class="live-badge">
+            <span class="pulse-dot"></span>
+            <span>Available for Full-Time Roles, Contracts &amp; Ventures</span>
+          </div>
+          <span class="section-tag" style="margin-bottom:0;">B.Sc. in CSE (2025–2029) · Metropolitan University, Sylhet · Cybersecurity · Entrepreneurship</span>
+        </div>
+
+        <h1 class="hero-title interactive-3d-title" id="heroTitle">
+          <span class="title-3d-wrap" id="heroTitleWrap">
+            <span class="title-3d-word samir">SAMIR</span>
+            <span class="title-3d-word qureshi">QURESHI</span>
+          </span>
+        </h1>
+
+        <div class="hero-subtitle-wrap" id="heroSubtitle3D">
+          <p class="hero-subtitle">
+            <span class="hero-sub-text">Computer Science &amp; Engineering Undergraduate at <strong class="hero-sub-highlight">Metropolitan University, Sylhet</strong>.</span><br />
+            <span class="hero-sub-text">Full-Stack Web Developer, Cybersecurity Specialist &amp; Tech Entrepreneur.</span><br />
+            <span class="hero-identity-line">I am a <span class="typewriter-text" id="typewriterTarget"></span><span class="typewriter-cursor">|</span></span>
+          </p>
+        </div>
+
+        <div class="hero-actions">
+          <a href="#projects" class="btn btn-primary">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+            View Featured Projects
+          </a>
+          <a href="#about" class="btn btn-secondary">
+            Read My Story &amp; Vision
+          </a>
+          <a href="#contact" class="btn btn-secondary">
+            Get In Touch
+          </a>
+        </div>
+
+        <div class="hero-socials">
+          <a href="https://wa.me/8801725198663" target="_blank" rel="noopener noreferrer" class="social-pill whatsapp-pill">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0 0 12.04 2m.01 1.67c2.2 0 4.26.86 5.82 2.42a8.225 8.225 0 0 1 2.41 5.83c0 4.54-3.7 8.24-8.24 8.24-1.48 0-2.93-.4-4.2-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.196 8.196 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.24-8.24m4.52 11.66c-.25-.13-1.47-.72-1.7-.81-.23-.08-.39-.13-.56.13-.17.25-.64.81-.79.97-.14.17-.29.19-.54.06-.25-.13-1.06-.39-2.03-1.25-.75-.67-1.26-1.5-1.41-1.75-.14-.25-.02-.39.11-.51.11-.11.25-.29.37-.44.13-.14.17-.25.25-.42.08-.17.04-.31-.02-.44-.06-.13-.56-1.34-.76-1.84-.2-.48-.41-.42-.56-.43h-.48c-.17 0-.44.06-.67.31-.23.25-.88.86-.88 2.1 0 1.24.9 2.44 1.03 2.61.13.17 1.77 2.71 4.3 3.79.6.26 1.07.41 1.44.53.61.19 1.16.17 1.6.1 1.49-.07 1.47-.72 1.68-1.42.21-.69.21-1.29.15-1.42-.06-.13-.23-.2-.48-.32Z"/></svg>
+            WhatsApp +8801725198663
+          </a>
+          <a href="https://www.linkedin.com/in/samir-qureshi-b13b27261/" target="_blank" rel="noopener noreferrer" class="social-pill">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.46 10.9v8.37H9.2V10.9H6.46M7.83 6.74a1.62 1.62 0 0 0-1.62 1.62c0 .89.73 1.62 1.62 1.62.89 0 1.62-.73 1.62-1.62 0-.89-.73-1.62-1.62-1.62Z"/></svg>
+            LinkedIn Profile
+          </a>
+          <a href="https://github.com/samir-60" target="_blank" rel="noopener noreferrer" class="social-pill">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.87 1.52 2.34 1.07 2.91.83.1-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.92 0-1.11.38-2 1.03-2.71-.1-.25-.45-1.29.1-2.64 0 0 .84-.27 2.75 1.02.79-.22 1.65-.33 2.5-.33.85 0 1.71.11 2.5.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.35.2 2.39.1 2.64.65.71 1.03 1.6 1.03 2.71 0 3.82-2.34 4.66-4.57 4.91.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2Z"/></svg>
+            GitHub @samir-60
+          </a>
+        </div>
+
+        <div class="scroll-indicator">
+          <div class="mouse-icon">
+            <div class="mouse-wheel"></div>
+          </div>
+          <span>SCROLL TO EXPLORE</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Live Stats Banner -->
+  <section class="stats-banner">
+    <div class="container">
+      <div class="stats-grid">
+        <div class="stat-card">
+          <div class="stat-number" data-target="20">0+</div>
+          <div class="stat-label">Repositories & Built Systems</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-number" data-target="100">0%</div>
+          <div class="stat-label">Ownership & Commitment</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-number" data-target="99">0+</div>
+          <div class="stat-label">Lighthouse Performance Mindset</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-number" data-target="60">0 FPS</div>
+          <div class="stat-label">Smooth 3D Spatial Framerate</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About / Human Story Section -->
+  <section class="section" id="about">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Story &amp; Mindset</span>
+        <h2 class="section-title">Engineering Driven by <span class="text-gradient">Human Empathy</span></h2>
+        <p class="section-desc">Behind every line of high-performance code is a relentless drive to solve genuine human and business problems.</p>
+      </div>
+
+      <div class="about-grid">
+        <!-- Visual Column -->
+        <div class="about-visual-card tilt-card">
+          <div class="card-glare"></div>
+          <div class="about-avatar-wrap">
+            <img src="./samir-qureshi.jpg" alt="Samir Qureshi — Full-Stack Engineer" class="about-avatar-img" />
+          </div>
+          <div class="about-badge-float">
+            <div class="about-badge-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+            </div>
+            <div>
+              <div class="about-badge-title">Metropolitan University, Sylhet</div>
+              <div class="about-badge-sub">B.Sc. in CSE (2025–2029) • Cybersecurity • Entrepreneur</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Narrative Column with Interactive Tabs -->
+        <div class="about-text-content">
+          <div class="story-tabs">
+            <button class="story-tab-btn active" data-tab="strategist">The Entrepreneur</button>
+            <button class="story-tab-btn" data-tab="builder">The Developer &amp; Cyber Expert</button>
+            <button class="story-tab-btn" data-tab="learner">The CSE Researcher</button>
+          </div>
+
+          <div class="story-tab-content active" id="tab-strategist">
+            <p>I am a passionate <strong>Businessman &amp; Tech Entrepreneur</strong> dedicated to building digital ventures that generate tangible economic value. As the founder behind <strong>Softyx Clothing (softyx.shop)</strong> and creator of commercial web systems like <strong>Profix &amp; Shine UK (profixandshine.co.uk)</strong>, I understand customer conversion, brand presence, unit economics, and scalable operations.</p>
+            <p>I don't just write code—I build businesses that thrive in competitive markets.</p>
+          </div>
+
+          <div class="story-tab-content" id="tab-builder">
+            <p>As a <strong>Full-Stack Web Developer &amp; Cybersecurity Specialist</strong>, I architect secure, fast, and resilient web platforms. My expertise spans <strong>TypeScript, modern JavaScript, React, Node.js, Express, PostgreSQL, and Three.js 3D</strong>.</p>
+            <p>In addition to frontend craftsmanship, I develop cybersecurity defenses—such as the <strong>Softyx Fraud Checker</strong> algorithm engine to protect merchants from transaction fraud and chargebacks.</p>
+          </div>
+
+          <div class="story-tab-content" id="tab-learner">
+            <p>I am currently pursuing my <strong>B.Sc. in Computer Science &amp; Engineering (2025 — 2029) at Metropolitan University, Sylhet</strong>. My academic focus centers on Data Structures &amp; Algorithms (DSA), Object-Oriented Programming (OOP), Database Systems, Computer Networks, and Artificial Intelligence.</p>
+            <p>As a researcher, I collaborate on AI data modeling projects like <strong>FieldForesight</strong> (predictive crop intelligence) and build academic platforms like <strong>StudySync</strong> to empower student productivity.</p>
+          </div>
+
+          <!-- Human Pillars Grid -->
+          <div class="pillars-grid">
+            <div class="pillar-card">
+              <div class="pillar-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"></path></svg>
+              </div>
+              <div class="pillar-title">Clear Communication</div>
+              <div class="pillar-desc">Honest, proactive stakeholder collaboration with zero guesswork.</div>
+            </div>
+            <div class="pillar-card">
+              <div class="pillar-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon></svg>
+              </div>
+              <div class="pillar-title">Reliability & Speed</div>
+              <div class="pillar-desc">Fast turnaround backed by thoughtful architectural decisions.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured Projects Gallery -->
+  <section class="section" id="projects">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Featured Work & Repositories</span>
+        <h2 class="section-title">Built With <span class="text-gradient">Purpose</span></h2>
+        <p class="section-desc">Explore live production websites, commercial client platforms, and open-source GitHub repositories.</p>
+      </div>
+
+      <!-- Masculine Live Production Slider Showcase -->
+      <div id="liveVenturesSlider" class="live-ventures-slider-mount">
+        <!-- Rendered dynamically by LiveVenturesSlider.js -->
+      </div>
+
+      <!-- Live GitHub Auto-Sync Telemetry Header -->
+      <div class="github-sync-status-bar">
+        <div class="sync-status-left">
+          <span class="hud-radar-dot green"></span>
+          <span class="sync-status-text">GITHUB LIVE AUTO-SYNC: <strong id="repoCountLabel">CONNECTING...</strong></span>
+        </div>
+        <a href="https://github.com/samir-60" target="_blank" rel="noopener noreferrer" class="sync-status-link">
+          github.com/samir-60 ↗
+        </a>
+      </div>
+
+      <!-- Filters -->
+      <div class="projects-filters">
+        <button class="filter-btn active" data-filter="all">All Projects</button>
+        <button class="filter-btn" data-filter="fullstack">Production & Web Apps</button>
+        <button class="filter-btn" data-filter="tools">Security & E-Commerce</button>
+        <button class="filter-btn" data-filter="ai">Productivity & AI</button>
+      </div>
+
+      <!-- Grid Container -->
+      <div class="projects-grid" id="projectsGrid">
+        <!-- Rendered dynamically by JavaScript -->
+      </div>
+    </div>
+  </section>
+
+  <!-- 3D Skills Cosmos & Matrix -->
+  <section class="section" id="skills">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Technical Depth</span>
+        <h2 class="section-title">Skills & <span class="text-gradient">Capabilities</span></h2>
+        <p class="section-desc">Interactive overview of core languages, frontend/backend frameworks, database architectures, and business acumen.</p>
+      </div>
+
+      <div class="skills-wrapper">
+        <!-- 3D Tag Galaxy -->
+        <div class="skills-cosmos-container">
+          <div id="skills-galaxy-canvas"></div>
+          <div class="cosmos-hint">Click &amp; Drag to Orbit 3D Skills Sphere</div>
+        </div>
+
+        <!-- Categorized Progress List -->
+        <div class="skills-categories-grid" id="skillsCategoriesList">
+          <!-- Rendered dynamically by JavaScript -->
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience & Milestones Timeline -->
+  <section class="section" id="experience">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Track Record</span>
+        <h2 class="section-title">Experience & <span class="text-gradient">Milestones</span></h2>
+        <p class="section-desc">A timeline of building real products, commercial deployments, and continuous personal growth.</p>
+      </div>
+
+      <div class="timeline" id="experienceTimeline">
+        <!-- Rendered dynamically by JavaScript -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Interactive Developer CLI Terminal -->
+  <section class="section terminal-section" id="terminal">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Interactive Terminal</span>
+        <h2 class="section-title">Developer <span class="text-gradient">Command Shell</span></h2>
+        <p class="section-desc">Type commands in the terminal below to explore background bio data, repository specs, or theme shortcuts.</p>
+      </div>
+
+      <div class="terminal-window">
+        <div class="terminal-header-bar">
+          <div class="terminal-controls">
+            <span class="term-btn red"></span>
+            <span class="term-btn yellow"></span>
+            <span class="term-btn green"></span>
+          </div>
+          <div class="terminal-title">samir@portfolio — zsh (80x24)</div>
+          <div style="width: 40px;"></div>
+        </div>
+
+        <div class="terminal-body" id="terminalBody">
+          <!-- Lines added dynamically -->
+        </div>
+
+        <div style="padding: 0.8rem 1.5rem; background: #090d14; border-top: 1px solid rgba(255,255,255,0.06);">
+          <div class="terminal-input-row">
+            <span class="term-prompt">samir@portfolio:~$</span>
+            <input type="text" id="terminalInput" class="term-input" placeholder="Type a command (e.g. 'help', 'projects', 'about', 'contact')..." autocomplete="off" spellcheck="false" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Hub -->
+  <section class="section" id="contact">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Let's Connect</span>
+        <h2 class="section-title">Get In <span class="text-gradient">Touch</span></h2>
+        <p class="section-desc">Have an opportunity, proposal, questions about my work, or want to collaborate? Send a message directly.</p>
+      </div>
+
+      <div class="contact-grid">
+        <!-- Info Card -->
+        <div class="contact-info-card tilt-card">
+          <div class="card-glare"></div>
+          <h3>Direct Channels</h3>
+          <p>Feel free to reach out directly via email, LinkedIn, or GitHub.</p>
+
+          <div class="contact-channels-list">
+            <a href="https://wa.me/8801725198663" target="_blank" rel="noopener noreferrer" class="contact-channel-item">
+              <div class="channel-icon-wrap" style="background: rgba(37, 211, 102, 0.15); color: #25d366;">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0 0 12.04 2m.01 1.67c2.2 0 4.26.86 5.82 2.42a8.225 8.225 0 0 1 2.41 5.83c0 4.54-3.7 8.24-8.24 8.24-1.48 0-2.93-.4-4.2-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.196 8.196 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.24-8.24m4.52 11.66c-.25-.13-1.47-.72-1.7-.81-.23-.08-.39-.13-.56.13-.17.25-.64.81-.79.97-.14.17-.29.19-.54.06-.25-.13-1.06-.39-2.03-1.25-.75-.67-1.26-1.5-1.41-1.75-.14-.25-.02-.39.11-.51.11-.11.25-.29.37-.44.13-.14.17-.25.25-.42.08-.17.04-.31-.02-.44-.06-.13-.56-1.34-.76-1.84-.2-.48-.41-.42-.56-.43h-.48c-.17 0-.44.06-.67.31-.23.25-.88.86-.88 2.1 0 1.24.9 2.44 1.03 2.61.13.17 1.77 2.71 4.3 3.79.6.26 1.07.41 1.44.53.61.19 1.16.17 1.6.1 1.49-.07 1.47-.72 1.68-1.42.21-.69.21-1.29.15-1.42-.06-.13-.23-.2-.48-.32Z"/></svg>
+              </div>
+              <div>
+                <div class="channel-label">WhatsApp Direct</div>
+                <div class="channel-val">+880 1725-198663</div>
+              </div>
+            </a>
+
+            <a href="mailto:qureshsamir145@gmail.com" class="contact-channel-item">
+              <div class="channel-icon-wrap" style="background: rgba(56, 189, 248, 0.15); color: var(--accent-cyan);">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+              </div>
+              <div>
+                <div class="channel-label">Direct Email</div>
+                <div class="channel-val">qureshsamir145@gmail.com</div>
+              </div>
+            </a>
+
+            <a href="https://www.linkedin.com/in/samir-qureshi-b13b27261/" target="_blank" rel="noopener noreferrer" class="contact-channel-item">
+              <div class="channel-icon-wrap">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.46 10.9v8.37H9.2V10.9H6.46M7.83 6.74a1.62 1.62 0 0 0-1.62 1.62c0 .89.73 1.62 1.62 1.62.89 0 1.62-.73 1.62-1.62 0-.89-.73-1.62-1.62-1.62Z"/></svg>
+              </div>
+              <div>
+                <div class="channel-label">LinkedIn Profile</div>
+                <div class="channel-val">linkedin.com/in/samir-qureshi-b13b27261/</div>
+              </div>
+            </a>
+
+            <a href="https://github.com/samir-60" target="_blank" rel="noopener noreferrer" class="contact-channel-item">
+              <div class="channel-icon-wrap">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.87 1.52 2.34 1.07 2.91.83.1-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.92 0-1.11.38-2 1.03-2.71-.1-.25-.45-1.29.1-2.64 0 0 .84-.27 2.75 1.02.79-.22 1.65-.33 2.5-.33.85 0 1.71.11 2.5.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.35.2 2.39.1 2.64.65.71 1.03 1.6 1.03 2.71 0 3.82-2.34 4.66-4.57 4.91.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2Z"/></svg>
+              </div>
+              <div>
+                <div class="channel-label">GitHub Profile</div>
+                <div class="channel-val">github.com/samir-60</div>
+              </div>
+            </a>
+          </div>
+
+          <div style="margin-top: 1.5rem;">
+            <button class="btn btn-secondary" id="copyEmailBtn" style="width: 100%;">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="14" height="14" x="8" y="8" rx="2" ry="2"></rect><path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"></path></svg>
+              <span id="copyEmailText">Copy qureshsamir145@gmail.com</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Interactive Form -->
+        <div class="contact-form-card">
+          <h3>Send a Message</h3>
+          <p style="margin-bottom: 1.5rem;">Submit your message below. You will receive an instant confirmation email and Samir will be notified directly.</p>
+
+          <form id="contactForm">
+            <div class="form-group">
+              <label class="form-label" for="senderName">Your Name</label>
+              <input type="text" id="senderName" name="name" class="form-input" placeholder="e.g. Alex Johnson" required />
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="senderEmail">Your Email Address</label>
+              <input type="email" id="senderEmail" name="email" class="form-input" placeholder="e.g. alex@company.com" required />
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="senderSubject">Subject</label>
+              <input type="text" id="senderSubject" name="subject" class="form-input" placeholder="e.g. Full-Stack Engineering Role / Project Proposal" required />
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="senderMessage">Message</label>
+              <textarea id="senderMessage" name="message" class="form-textarea" placeholder="Tell me about your project requirements, timeline, or position..." required></textarea>
+            </div>
+
+            <button type="submit" id="contactSubmitBtn" class="btn btn-primary" style="width: 100%;">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+              <span id="submitBtnText">Send Message</span>
+            </button>
+
+            <div class="form-success-msg" id="formSuccess" style="display: none;">
+              <strong>Message Sent Successfully</strong><br />
+              An email notification has been dispatched to Samir (<code>qureshsamir145@gmail.com</code>) and an automatic confirmation copy has been sent to your email.
+            </div>
+            <div class="form-error-msg" id="formError" style="display: none; margin-top: 1rem; padding: 1rem; background: rgba(239, 68, 68, 0.15); border: 1px solid rgba(239, 68, 68, 0.3); border-radius: 8px; color: #fca5a5; font-size: 0.9rem;">
+              Unable to send automatically. You can email directly at <a href="mailto:qureshsamir145@gmail.com" style="color: #fff; text-decoration: underline;">qureshsamir145@gmail.com</a>.
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <div style="display:flex; align-items:center; gap:0.75rem; margin-bottom: 0.5rem;">
+            <div class="nav-logo-icon">S</div>
+            <h3 style="margin:0;">Samir Qureshi</h3>
+          </div>
+          <p style="margin:0; font-size: 0.9rem; color: var(--text-muted);">Bridging Business Strategy, Scalable Architecture & 3D Interactive Web Experiences.</p>
+        </div>
+
+        <div style="display: flex; gap: 1rem; align-items: center; flex-wrap: wrap;">
+          <a href="https://wa.me/8801725198663" target="_blank" rel="noopener noreferrer" class="social-pill">
+            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0 0 12.04 2m.01 1.67c2.2 0 4.26.86 5.82 2.42a8.225 8.225 0 0 1 2.41 5.83c0 4.54-3.7 8.24-8.24 8.24-1.48 0-2.93-.4-4.2-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.196 8.196 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.24-8.24m4.52 11.66c-.25-.13-1.47-.72-1.7-.81-.23-.08-.39-.13-.56.13-.17.25-.64.81-.79.97-.14.17-.29.19-.54.06-.25-.13-1.06-.39-2.03-1.25-.75-.67-1.26-1.5-1.41-1.75-.14-.25-.02-.39.11-.51.11-.11.25-.29.37-.44.13-.14.17-.25.25-.42.08-.17.04-.31-.02-.44-.06-.13-.56-1.34-.76-1.84-.2-.48-.41-.42-.56-.43h-.48c-.17 0-.44.06-.67.31-.23.25-.88.86-.88 2.1 0 1.24.9 2.44 1.03 2.61.13.17 1.77 2.71 4.3 3.79.6.26 1.07.41 1.44.53.61.19 1.16.17 1.6.1 1.49-.07 1.47-.72 1.68-1.42.21-.69.21-1.29.15-1.42-.06-.13-.23-.2-.48-.32Z"/></svg>
+            WhatsApp
+          </a>
+          <a href="https://www.linkedin.com/in/samir-qureshi-b13b27261/" target="_blank" rel="noopener noreferrer" class="social-pill">LinkedIn</a>
+          <a href="https://github.com/samir-60" target="_blank" rel="noopener noreferrer" class="social-pill">GitHub</a>
+          <button class="back-to-top" id="backToTopBtn">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="19" x2="12" y2="5"></line><polyline points="5 12 12 5 19 12"></polyline></svg>
+            Back to Top
+          </button>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>© 2026 Samir Qureshi. Crafted with Three.js, Vanilla CSS & Modern JavaScript.</div>
+        <div class="font-mono" id="liveClockDisplay">Time (UTC): 00:00:00</div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Project Case Study Modal -->
+  <div class="modal-backdrop" id="projectModalBackdrop"></div>
+  <div class="modal-container" id="projectModal">
+    <button class="modal-close-btn" aria-label="Close modal">
+      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+    </button>
+    <div id="projectModalContent"></div>
+  </div>
+
+  <!-- Printable Resume Modal -->
+  <div class="modal-backdrop" id="resumeModalBackdrop"></div>
+  <div class="modal-container" id="resumeModal" style="max-width: 860px;">
+    <button class="modal-close-btn" aria-label="Close resume modal">
+      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+    </button>
+    <div style="padding: 1.5rem; display: flex; justify-content: flex-end; gap: 0.8rem; border-bottom: 1px solid var(--border-glass);">
+      <button class="btn btn-primary" id="printResumeBtn" style="padding: 0.5rem 1.2rem; font-size: 0.85rem;">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 6 2 18 2 18 9"></polyline><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"></path><rect width="12" height="8" x="6" y="14"></rect></svg>
+        Print / Save to PDF
+      </button>
+    </div>
+    <div class="resume-paper">
+      <div class="resume-header">
+        <h1 class="resume-name">SAMIR QURESHI</h1>
+        <div class="resume-tagline">B.Sc. in Computer Science &amp; Engineering • Full-Stack Web Developer • Cybersecurity Specialist • Entrepreneur</div>
+        <div class="resume-contact-row">
+          <span>Location: Metropolitan University, Sylhet &amp; Remote</span>
+          <span>WhatsApp: <a href="https://wa.me/8801725198663" target="_blank">+8801725198663</a></span>
+          <span>Email: <a href="mailto:qureshsamir145@gmail.com">qureshsamir145@gmail.com</a></span>
+          <span>LinkedIn: <a href="https://www.linkedin.com/in/samir-qureshi-b13b27261/" target="_blank">samir-qureshi</a></span>
+          <span>GitHub: <a href="https://github.com/samir-60" target="_blank">samir-60</a></span>
+        </div>
+      </div>
+
+      <div class="resume-section">
+        <h3>Professional Summary</h3>
+        <p class="resume-entry-desc">
+          Computer Science &amp; Engineering student at <strong>Metropolitan University, Sylhet (2025 — 2029)</strong>, Full-Stack Web Developer, Cybersecurity Specialist, and Tech Entrepreneur. Proven track record founding and delivering production platforms (Softyx Clothing, Profix &amp; Shine UK, BiblioDrop), engineering fraud prevention algorithms, and conducting academic research in predictive AI and student productivity.
+        </p>
+      </div>
+
+      <div class="resume-section">
+        <h3>Core Technical Skills</h3>
+        <div class="resume-skill-pills">
+          <span class="resume-pill">Data Structures &amp; Algorithms (DSA)</span>
+          <span class="resume-pill">Cybersecurity &amp; Fraud Detection</span>
+          <span class="resume-pill">TypeScript</span>
+          <span class="resume-pill">JavaScript (ES6+)</span>
+          <span class="resume-pill">React.js &amp; Next.js</span>
+          <span class="resume-pill">Node.js &amp; Express.js</span>
+          <span class="resume-pill">Three.js / WebGL</span>
+          <span class="resume-pill">PostgreSQL &amp; SQL</span>
+          <span class="resume-pill">MongoDB</span>
+          <span class="resume-pill">Docker &amp; Containers</span>
+          <span class="resume-pill">Git / GitHub Workflows</span>
+          <span class="resume-pill">RESTful APIs &amp; WebSockets</span>
+          <span class="resume-pill">E-Commerce &amp; Product Strategy</span>
+        </div>
+      </div>
+
+      <div class="resume-section">
+        <h3>Experience &amp; Key Projects</h3>
+        
+        <div class="resume-entry">
+          <div class="resume-entry-header">
+            <span>Lead Full-Stack Engineer &amp; Founder</span>
+            <span>2023 — Present</span>
+          </div>
+          <div class="resume-entry-sub">Softyx Clothing (Live: softyx.shop • github.com/samir-60/Softyx-Clothing)</div>
+          <ul class="resume-bullets">
+            <li>Engineered and deployed an interactive e-commerce platform with virtual try-on technology and smart body dimensions scanner.</li>
+            <li>Implemented high-converting responsive UI, secure checkout workflows, and sub-second catalog navigation.</li>
+          </ul>
+        </div>
+
+        <div class="resume-entry">
+          <div class="resume-entry-header">
+            <span>Web Platform Architect &amp; Developer</span>
+            <span>2023 — Present</span>
+          </div>
+          <div class="resume-entry-sub">Profix &amp; Shine UK (Live: profixandshine.co.uk • github.com/samir-60/Profix-shine-uk)</div>
+          <ul class="resume-bullets">
+            <li>Developed commercial cleaning service platform for UK market with dynamic quotation and booking systems.</li>
+            <li>Optimized SEO architecture and mobile responsive performance achieving 99+ Google Lighthouse score.</li>
+          </ul>
+        </div>
+
+        <div class="resume-entry">
+          <div class="resume-entry-header">
+            <span>Open Source Builder &amp; Full-Stack Engineer</span>
+            <span>2023 — Present</span>
+          </div>
+          <div class="resume-entry-sub">BiblioDrop &amp; StudySync (github.com/samir-60/BiblioDrop)</div>
+          <ul class="resume-bullets">
+            <li>Built community-driven literature sharing ecosystem and collaborative study hub with instant search and status tracking.</li>
+            <li>Designed REST API architecture with robust payload validation and structured error handling.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="resume-section">
+        <h3>Education &amp; Academic Research</h3>
+        <div class="resume-entry">
+          <div class="resume-entry-header">
+            <span>B.Sc. in Computer Science &amp; Engineering (CSE)</span>
+            <span>2025 — 2029 (Expected)</span>
+          </div>
+          <div class="resume-entry-sub">Metropolitan University, Sylhet</div>
+          <div class="resume-entry-desc">
+            Rigorous undergraduate degree encompassing Data Structures &amp; Algorithms, Object-Oriented Programming, Database Systems, Computer Networks, Cybersecurity, Operating Systems, and Artificial Intelligence.
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Application Coordinator Script -->
+</body>
+</html>

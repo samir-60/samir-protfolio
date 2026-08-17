@@ -8,7 +8,6 @@ backend/.env
 
 # Dependencies
 node_modules/
-package-lock.json
 
 # Python & Virtual Environments
 .venv/

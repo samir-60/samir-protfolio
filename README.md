@@ -26,6 +26,18 @@ A modern, high-performance, and **enterprise cybersecurity-hardened portfolio we
 
 ---
 
+## 💻 Languages & Core Technologies
+
+| Language / Tool | Category | Role in Project |
+|---|---|---|
+| ![Python](https://img.shields.io/badge/Python_3.12-3776AB?style=for-the-badge&logo=python&logoColor=white) | **Backend & Security** | Django 6.1, DRF, Scoped Rate Limiting, Gmail SMTP Encryption |
+| ![JavaScript](https://img.shields.io/badge/JavaScript_ES6+-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black) | **Frontend Engineering** | Three.js 3D Canvas, Geo-Telemetry Sliding HUD, Interactive Terminal, Sound Engine |
+| ![CSS3](https://img.shields.io/badge/CSS3_Modern-1572B6?style=for-the-badge&logo=css3&logoColor=white) | **Design System** | Glassmorphism UI, Responsive Fluid Grids, Cyber Neon Micro-interactions |
+| ![HTML5](https://img.shields.io/badge/HTML5_Semantic-E34F26?style=for-the-badge&logo=html5&logoColor=white) | **Web Architecture** | Semantic Structure, Accessible DOM, SEO & OpenGraph Meta |
+| ![Django](https://img.shields.io/badge/Django_REST-092E20?style=for-the-badge&logo=django&logoColor=white) | **API Framework** | REST Endpoints, XSS / Injection Armor, Throttling Engine |
+
+---
+
 ## 🚀 Key Architectural Features
 
 ### 1. 🛡️ High-Security Django REST Backend (`django_backend/`)

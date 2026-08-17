@@ -1,0 +1,13 @@
+# Auto-detect text files and perform LF normalization
+* text=auto
+
+# Explicit Language Classification for GitHub Linguist
+*.py linguist-language=Python
+*.js linguist-language=JavaScript
+*.css linguist-language=CSS
+*.html linguist-language=HTML
+*.json linguist-language=JSON
+
+# Vendor / Documentation Exclusions
+dist/** linguist-vendored
+public/assets/** linguist-documentation

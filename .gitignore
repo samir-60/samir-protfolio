@@ -1,0 +1,36 @@
+# Environment & Credentials
+.env
+*.env
+.env.local
+.env.*.local
+django_backend/.env
+backend/.env
+
+# Dependencies
+node_modules/
+package-lock.json
+
+# Python & Virtual Environments
+.venv/
+*/.venv/
+venv/
+ENV/
+env/
+__pycache__/
+*/__pycache__/
+*/**/__pycache__/
+*.py[cod]
+*$py.class
+*.sqlite3
+db.sqlite3
+
+# Build Outputs
+dist/
+dist-ssr/
+*.local
+
+# IDE & OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db

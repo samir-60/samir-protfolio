@@ -2551,6 +2551,26 @@ a {
   background: rgba(16, 185, 129, 0.15);
   border-color: rgba(16, 185, 129, 0.3);
   color: #34d399;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+}
+
+.hud-flag-wrap {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1;
+}
+
+.hud-country-flag {
+  width: 15px;
+  height: 11px;
+  object-fit: cover;
+  border-radius: 2px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+  display: inline-block;
+  vertical-align: middle;
 }
 
 .hud-chip-badge.cyber-badge {

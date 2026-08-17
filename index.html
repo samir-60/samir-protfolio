@@ -24,9 +24,9 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&family=Outfit:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
 
-  <!-- Stylesheet -->
-  <script type="module" crossorigin src="./assets/index-CrAw3aMH.js"></script>
-  <link rel="stylesheet" crossorigin href="./assets/index-CnVFfqgD.css">
+  <!-- Stylesheet -->
+  <script type="module" crossorigin src="./assets/index-CfCV0pzO.js"></script>
+  <link rel="stylesheet" crossorigin href="./assets/index-Nswf9PYK.css">
 </head>
 <body>
 
@@ -72,13 +72,102 @@
           </div>
         </div>
 
-        <!-- Resume Modal Trigger -->
-        <button class="btn btn-primary" id="openResumeBtn" style="padding: 0.45rem 1.1rem; font-size: 0.85rem;">
+        <!-- Resume Modal Trigger (Desktop) -->
+        <button class="btn btn-primary nav-resume-btn" id="openResumeBtn" style="padding: 0.45rem 1.1rem; font-size: 0.85rem;">
           <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z"></path><polyline points="14 2 14 8 20 8"></polyline></svg>
           Resume
         </button>
+
+        <!-- Mobile Navigation Hamburger Toggle -->
+        <button class="control-btn mobile-nav-toggle" id="mobileNavToggle" aria-label="Toggle Navigation Menu" aria-expanded="false">
+          <span class="hamburger-bar top-bar"></span>
+          <span class="hamburger-bar mid-bar"></span>
+          <span class="hamburger-bar bot-bar"></span>
+        </button>
       </div>
     </nav>
+  </div>
+
+  <!-- Mobile Navigation Drawer -->
+  <div class="mobile-nav-backdrop" id="mobileNavBackdrop"></div>
+  <div class="mobile-nav-drawer" id="mobileNavDrawer" aria-hidden="true">
+    <div class="mobile-drawer-header">
+      <div class="mobile-drawer-brand">
+        <div class="nav-logo-icon">S</div>
+        <div>
+          <div class="drawer-brand-name">Samir Qureshi</div>
+          <div class="drawer-brand-role">Full-Stack &amp; Cybersecurity</div>
+        </div>
+      </div>
+      <button class="control-btn mobile-drawer-close" id="mobileDrawerClose" aria-label="Close Menu">
+        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+      </button>
+    </div>
+
+    <ul class="mobile-drawer-links">
+      <li>
+        <a href="#hero" class="mobile-drawer-link">
+          <span class="drawer-link-num">01</span>
+          <span class="drawer-link-text">Home / Top</span>
+          <svg class="drawer-arrow" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg>
+        </a>
+      </li>
+      <li>
+        <a href="#about" class="mobile-drawer-link">
+          <span class="drawer-link-num">02</span>
+          <span class="drawer-link-text">About &amp; Story</span>
+          <svg class="drawer-arrow" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg>
+        </a>
+      </li>
+      <li>
+        <a href="#projects" class="mobile-drawer-link">
+          <span class="drawer-link-num">03</span>
+          <span class="drawer-link-text">Featured Projects</span>
+          <svg class="drawer-arrow" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg>
+        </a>
+      </li>
+      <li>
+        <a href="#skills" class="mobile-drawer-link">
+          <span class="drawer-link-num">04</span>
+          <span class="drawer-link-text">Skills &amp; 3D Galaxy</span>
+          <svg class="drawer-arrow" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg>
+        </a>
+      </li>
+      <li>
+        <a href="#experience" class="mobile-drawer-link">
+          <span class="drawer-link-num">05</span>
+          <span class="drawer-link-text">Track Record &amp; Timeline</span>
+          <svg class="drawer-arrow" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg>
+        </a>
+      </li>
+      <li>
+        <a href="#terminal" class="mobile-drawer-link">
+          <span class="drawer-link-num">06</span>
+          <span class="drawer-link-text">Interactive Terminal</span>
+          <svg class="drawer-arrow" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg>
+        </a>
+      </li>
+      <li>
+        <a href="#contact" class="mobile-drawer-link">
+          <span class="drawer-link-num">07</span>
+          <span class="drawer-link-text">Contact Hub</span>
+          <svg class="drawer-arrow" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg>
+        </a>
+      </li>
+    </ul>
+
+    <div class="mobile-drawer-actions">
+      <button class="btn btn-primary mobile-drawer-resume-btn" id="mobileResumeBtn">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z"></path><polyline points="14 2 14 8 20 8"></polyline></svg>
+        View / Print Resume
+      </button>
+
+      <div class="mobile-drawer-socials">
+        <a href="https://wa.me/8801725198663" target="_blank" rel="noopener noreferrer" class="social-pill whatsapp-pill">WhatsApp</a>
+        <a href="https://github.com/samir-60" target="_blank" rel="noopener noreferrer" class="social-pill">GitHub</a>
+        <a href="https://www.linkedin.com/in/samir-qureshi-b13b27261/" target="_blank" rel="noopener noreferrer" class="social-pill">LinkedIn</a>
+      </div>
+    </div>
   </div>
 
   <!-- Hero Section -->
@@ -620,6 +709,6 @@
     </div>
   </div>
 
-  <!-- Application Coordinator Script -->
+  <!-- Application Coordinator Script -->
 </body>
 </html>

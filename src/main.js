@@ -13,11 +13,16 @@ import { CursorEffects } from './components/CursorEffects.js';
 import { soundEngine } from './components/SoundEngine.js';
 import { LiveVenturesSlider } from './components/LiveVenturesSlider.js';
 import { GeoTelemetryTicker } from './components/GeoTelemetryTicker.js';
+import { IdCard } from './components/IdCard.js';
 import { syncGitHubRepositories } from './services/githubSync.js';
+import './id-card.css';
 
 document.addEventListener('DOMContentLoaded', () => {
   // Initialize Live Geo-Telemetry & Sliding Clock
   new GeoTelemetryTicker('geoTelemetryMount');
+  
+  // Initialize 3D Animated Developer & Entrepreneur ID Card
+  new IdCard('idCardMount');
   // 1. Initialize 3D Hero Scene
   try {
     new ThreeHeroScene('three-hero-canvas');
